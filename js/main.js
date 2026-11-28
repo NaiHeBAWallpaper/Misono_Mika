@@ -43,7 +43,8 @@ const subtitleLocales = {
 	Chinese: 'zh-Hans',
 	TraditionalChinese: 'zh-Hant',
 	Japanese: 'ja',
-	Korean: 'ko'
+	Korean: 'ko',
+	Thai: 'th'
 };
 
 const CHARACTER = 'CH0069';
@@ -66,8 +67,8 @@ const AUDIO_DETAIL = [
 				"What should we do now? It looks like we're stuck here until morning."
 			],
 			Chinese: [
-				"老师你、被我骗了呢。",
-				"怎么办呢？直到早上都只能待在这里了。"
+				"……老师，被我骗了呢。",
+				"打算怎么办？你只能和我一起，待到早上了哦？"
 			],
 			TraditionalChinese: [
 				"……老師你，被我騙了唷。",
@@ -76,7 +77,8 @@ const AUDIO_DETAIL = [
 			Korean: [
 				"……선생님은, 속은 거야.",
 				"어떡하지? 이제, 아침까지 여기 있을 수 밖에 없는데?"
-			]
+			],
+			Thai: ["ชู่ว... คุณครูถูกหลอกแล้วละ","ทำยังไงดีล่ะ? แบบนี้ก็คงต้อง อยู่กับฉันจนถึงเช้าแล้วแหละ?"]
 		} 
 	},
 	{ 
@@ -86,12 +88,12 @@ const AUDIO_DETAIL = [
 				"あれほど「私を信じないで」って言ったのに…"
 			],
 			English: [
-				"You trusted me so easily!",
-				"Sensei, I told you...so many times not to trust me..."
+				"You trusted me so easily! Really, Sensei...",
+				"I told you...so many times not to trust me..."
 			],
 			Chinese: [
-				"这么简单就信了我的话、老师真的是…",
-				"明明都说了那么多次'不要相信我了'..."
+				"竟然这么轻易就相信了我，老师也真是的……",
+				"明明都说过多少遍了，让你不要那么相信我……"
 			],
 			TraditionalChinese: [
 				"居然這麼簡單就相信我，老師也真是……",
@@ -100,60 +102,63 @@ const AUDIO_DETAIL = [
 			Korean: [
 				"이렇게 간단히 나를 믿어버리다니, 선생님도 정말이지….",
 				"그렇게 나를 믿지 말라고 말했는데도…"
-			]
+			],
+			Thai: ["เชื่อคำพูดของฉัน ง่ายๆ แบบนี้ด้วยเหรอเนี่ย... คุณครูนี่จริงๆ เลย...","ฉันบอกไปแล้วนี่นา ว่าอย่าเชื่อใจฉันขนาดนั้นน่ะ..."]
 		} 
 	},
 	{ 
 		dialog: {
 			Japanese: [
-				"ん？ここで騒いだら…みんなにバレちゃうよ？",
-				"いいの？…私は、別にいいけど。"
+				"ん？ここで騒いだら…みんなにバレちゃうよ？いいの？",
+				"…私は、別にいいけど。"
 			],
 			English: [
-				"Shhh! If you cause a scene here, everyone will find out.",
-				"Of course, it doesn't matter to me either way. I've got nothing to lose."
+				"Hmm? If you cause a scene here, everyone will find out. Are you sure you want that to happen?",
+				"Of course, it doesn't matter to me either way."
 			],
 			Chinese: [
-				"嗯？在这里发出什么动静的话…会被大家发现的哦？",
-				"这样也无所谓吗？…我倒不是很在乎呢。"
+				"嗯？声音这么大的话……会被大家发现的哦？没关系吗？",
+				"……不过，我倒是无所谓啦。"
 			],
 			TraditionalChinese: [
-				"嗯？在這裡發出什麼動靜的話…會被大家發現的哦？",
+				"嗯？在這裡吵鬧的話……會被大家發現的唷？沒關係嗎？",
 				"……我是，無所謂啦。"
 			],
 			Korean: [
-				"만약 당신이 여기서 시나리오를 만들면, 모든 사람들이 알게 될 겁니다.",
+				"응? 여기에서 소란 피웠다간…… 모두에게 들켜버릴 거야? 괜찮아?",
 				"…나는 딱히 상관없지만."
-			]
+			],
+			Thai: ["หืม? ถ้าทำเสียงดังที่นี่ละก็ จะถูกทุกคนจับได้เอานะ... ไม่เป็นไรแน่เหรอ?","...ฉันน่ะไม่เป็นไรหรอก"]
 		} 
 	},
 	{ 
 		dialog: {
 			Japanese: [
-				"…あれ。",
-				"もしかして…怒った？",
+				"…あれ。もしかして…怒った？",
+				"…あれ。もしかして…怒った？",
 				"私が問題児だってことくらい、先生だって知ってたでしょ…？"
 			],
 			English: [
-				"What?",
-				"...You aren't mad, are you?",
+				"What? ...You aren't mad, are you?",
+				"What? ...You aren't mad, are you?",
 				"You should know me by now. You knew I was trouble, Sensei. Didn't you...?"
 			],
 			Chinese: [
-				"...欸？",
-				"难道说…生气了？",
-				"我是个问题儿童这件事、老师应该也很清楚吧...？"
+				"……诶？难道……老师生气了？",
+				"……诶？难道……老师生气了？",
+				"我是问题儿童这件事，老师不是早就知道了嘛……？"
 			],
 			TraditionalChinese: [
-				"咦？",
-				"難道說…生氣了？",
+				"……咦？難道……你生氣了？",
+				"……咦？難道……你生氣了？",
 				"我是問題兒童這種事，老師也很清楚吧……？"
 			],
 			Korean: [
-				"어라?",
-				"...당신은 화가 나지 않나요?",
+				"……어라. 혹시…… 화났어?",
+				"……어라. 혹시…… 화났어?",
 				"내가 문제아라는 것 쯤, 선생님도 알고 있었잖아……?"
-			]
+			],
+			Thai: ["หืม...? นี่ โกรธกันเหรอ?","หืม...? นี่ โกรธกันเหรอ?","คุณครูก็รู้อยู่แล้วไม่ใช่รึไง เรื่องที่ฉันเป็นเด็กเจ้าปัญหาน่ะ...?"]
 		} 
 	},
 	{ 
@@ -171,10 +176,10 @@ const AUDIO_DETAIL = [
 				"I just wanted to spend one more moment with you, Sensei."
 			],
 			Chinese: [
-				"那个…让你感到困扰了吗。",
-				"被老师讨厌什么的、我才不要…",
-				"但是、一会会、真的一会会就好...",
-				"我想享受和老师独处的这段时间...。"
+				"我……我不是故意让老师为难的。",
+				"……我不想，被老师……讨厌……",
+				"但是……我想……跟老师多待一会儿……",
+				"就一小会儿……"
 			],
 			TraditionalChinese: [
 				"那個……我不是想造成你的困擾。",
@@ -187,7 +192,8 @@ const AUDIO_DETAIL = [
 				"선생님에게 미움받는 건…… 싫어……",
 				"하지만… 조금만… 아주 잠깐이라도 좋으니까…",
 				"선생님과, 함께 있고 싶었어……."
-			]
+			],
+			Thai: ["คือว่า... ฉันไม่ได้คิดจะ ทำให้คุณครูลำบากหรอกนะ","ฉันก็แค่ไม่อยากให้คุณครู เกลียดฉันน่ะ...","แต่ว่า... แค่แป๊ปเดียว... ขอแค่ช่วงเวลาสั้นๆ แบบนี้ก็ได้...","ฉันอยากใช้เวลาอยู่กับคุณครู..."]
 		} 
 	}
 ];
@@ -299,7 +305,7 @@ function playVoiceline() {
 			track.play().catch(finish);
 
 			if (dialogBox) {
-				textbox.textContent = dialog[window.selectedLanguage][index];
+				textbox.textContent = getSubtitleText(dialog, window.selectedLanguage, index);
 				textbox.style.opacity = 1;
 			}
 		},
@@ -469,6 +475,16 @@ function setMouse(event) {
 	return { x: ax - canvas.width * positionX, y: ay - canvas.height * positionY };
 }
 
+function getSubtitleText(dialog, language, index) {
+	let text = dialog?.[language]?.[index];
+	if (text == null && language === 'Thai') {
+		language = 'English';
+		text = dialog?.[language]?.[index];
+	}
+	textbox.lang = subtitleLocales[language];
+	return text ?? "";
+}
+
 function updateSubtitleLanguage() {
 	let language = subtitleLanguagePreference;
 	if (language === 'auto') {
@@ -482,6 +498,8 @@ function updateSubtitleLanguage() {
 			language = 'Japanese';
 		} else if (primary === 'ko' || primary === 'korean' || primary === 'koreana') {
 			language = 'Korean';
+		} else if (primary === 'th' || primary === 'thai') {
+			language = 'Thai';
 		} else {
 			language = 'English';
 		}
@@ -491,7 +509,7 @@ function updateSubtitleLanguage() {
 	window.selectedLanguage = language;
 	textbox.lang = subtitleLocales[language];
 	const clip = currentTracks.at(-1);
-	if (dialogBox && clip) textbox.textContent = clip.dialog[language][clip.index];
+	if (dialogBox && clip) textbox.textContent = getSubtitleText(clip.dialog, language, clip.index);
 }
 
 function init() {
